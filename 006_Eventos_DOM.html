@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/estilo.css"> -->
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+
+    <style>
+        body{
+            background-color: #f7f7f7
+        }
+        div#container{
+            background-color: #8d7bcc;
+            width: 500px;
+            margin: 50px auto;
+            border-radius: 15px;
+            padding:10px 25px;
+            box-shadow: 3px 3px 5px rgba(0,0,0,.7);
+        }
+        div#area{
+            background-color: #7bccba;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 100px;
+        }
+        h1{
+            color:#050929;
+            text-shadow: 1px 1px 3px #f7f7f7;
+        }
+    </style>
+
+    <title>Eventos DOM</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Eventos DOM</h1>
+        <div id=area>
+            interaja
+        </div>
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            
+            a.innerText = "clicou"
+            a.style.background = "red"
+        }
+        function entrar() {
+            var b = window.document.getElementById('area')
+            b.innerText = "entrou!"
+        }
+        function sair() {
+            var c = window.document.getElementById('area')
+            c.innerText = "saiu!"
+        }
+    </script>
+    
+</body>
+</html>
