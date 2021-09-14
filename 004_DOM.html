@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/estilo.css"> -->
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+
+    <style>
+        body{
+            background-color: #f7f7f7
+        }
+        div#container{
+            background-color: #8d7bcc;
+            width: 500px;
+            margin: 50px auto;
+            border-radius: 15px;
+            padding:10px 25px;
+            box-shadow: 3px 3px 5px rgba(0,0,0,.7);
+        }
+        h1{
+            color:#050929;
+            text-shadow: 1px 1px 3px #f7f7f7;
+        }
+    </style>
+
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Iniciando estudos com o DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+        <div id='msg'>Clique em mim</div>
+    </div>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        window.document.write(`Está escrito no 1º paragrafo: "${p1.innerText}" <br/>`)
+        var p2 = document.getElementsByTagName('p')[1]
+        window.document.write(`Está escrito no 2º paragrafo: "${p2.innerHTML}"<br/>`)
+        p1.style.color = "blue"
+        // var d = document.getElementById('msg')
+        var d = document.querySelector('div#msg')
+        document.write(d.innerHTML)
+        d.style.background = 'green'
+        d.innerHTML = 'Já cliquei!'
+    </script>
+    
+
+</body>
+</html>
