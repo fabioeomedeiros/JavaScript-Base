@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'orbitron';
+    src: url('Orbitron-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'titillium';
+    src: url('TitilliumWeb-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #ffffff;
+    --cor1: #000000;
+}
+
+html {
+    color: rgba(102, 255, 115, 0.5);
+    font-family: 'titillium', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url('Matrix-wallpaper-2000px.jpg');
+}
+
+div#container {
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 700px;
+    margin: 100px auto;
+    padding:50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(38, 163, 48, 0.7);
+}
+
+fieldset {
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0px;
+    border: 1px solid rgba(38, 163, 48, 0.5);
+}
+
+fieldset input {
+    color: rgb(180, 255, 187);;
+    background-color: #000000;
+    margin: 5px 0px 5px 10px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+h1 {
+    /* color: rgba(38, 163, 48, 0.7); */
+    background-color: rgba(0,0,0,1);
+    font-family: 'orbitron', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 0px 35px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(38, 163, 48, 0.7);
+}
+
+.botao {
+    padding: 3px 7px;
+    border-radius: 3px;
+}
