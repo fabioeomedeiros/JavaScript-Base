@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+
+    <title>Titulo</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Sistema de Voto</h1>
+        <form>
+            <fieldset>
+                <legend>Verificando Idade</legend>
+                <label for='id-nasc'>Ano de Nascimento:</label>
+                <input id='id-nasc' name='nm-nasc' type='number' min='1870' placeholder='4 dígitos'>
+                <input class='botao' type='button' value='Verificar' onclick='verificar()' >
+            </fieldset>
+            <p id='display'>Preencha o ano de nascimento</p>
+        </form>
+    </div>
+
+    <script>
+        function verificar() {
+            var anoatual = new Date().getFullYear()
+            var display = document.getElementById('display')
+            var nasc = Number(document.getElementById('id-nasc').value)
+            var idade = anoatual - nasc
+            
+            if (idade < 16) {
+                display.innerHTML = `Você tem ${idade} anos <br/> Voto NEGADO e Habilitação PROIBIDA`
+            } else if (idade < 18) {
+                display.innerHTML = `Você tem ${idade} anos <br/> Voto OPCIONAL e Habilitação PROIBIDA`
+            } else if (idade < 65) {
+                display.innerHTML = `Você tem ${idade} anos <br/> Voto OBRIGATÓRIO e Habilitação PERMITIDA`
+            } else {
+                display.innerHTML = `Você tem ${idade} anos <br/> Voto OPCIONAL e Habilitação PERMITIDA`
+            }
+        }
+    </script>
+
+</body>
+</html>
