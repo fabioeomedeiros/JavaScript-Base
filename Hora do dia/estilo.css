@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Philosopher&display=swap');
+
+/* font-family: 'Actor', sans-serif;
+font-family: 'Philosopher', sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #ffffff;
+    --cor1: #000000;
+}
+
+html {
+    color: var(--cor0);
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+main#principal {
+    background-color: rgb(75, 34, 0);
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+    
+}
+
+header#cabecalho {
+    /* background-color: blue; */
+    margin: 0px 0px 20px 0px;
+    padding: 10px 0px;
+}
+
+header#cabecalho h1 {
+    /* background-color: green; */
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+}
+
+section#secao {
+    /* background-color: yellow; */
+    font-family: 'Actor', sans-serif;
+}
+
+/* footer#rodape {
+    background-color: green;
+    margin: 5px;
+    padding: 10px;
+} */
