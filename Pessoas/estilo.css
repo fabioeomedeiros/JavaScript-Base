@@ -56,8 +56,13 @@ section#secao {
     font-family: 'Actor', sans-serif;
 }
 
-div#resposta {
+p#resposta {
     margin:20px 0px 30px 0px;
+    text-align: center;
+}
+
+div#foto {
+    text-align: center;
 }
 
 input {
@@ -68,8 +73,11 @@ input {
     padding: 3px 7px;
 }
 
-/* footer#rodape {
-    background-color: green;
-    margin: 5px;
-    padding: 10px;
-} */
+#imagem {
+    border-radius: 125px;
+}
+
+footer#rodape {
+    text-align: center;
+    margin: 25px 0px 0px 0px;
+}

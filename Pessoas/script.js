@@ -14,27 +14,34 @@ function encontrar() {
             imagem.src = 'imagens/BM.jpg'
         } else if (sexo[1].checked) {
             genero = 'feminino'
+            imagem.src = 'imagens/BF.jpg'
         }
         resposta.innerHTML = `Encontramos uma pessoas de ${idade} anos de idade do sexo ${genero}`
     } else if (idade < 18) {
         if (sexo[0].checked) {
             genero = 'masculino'
+            imagem.src = 'imagens/JM.jpg'
         } else if (sexo[1].checked) {
             genero = 'feminino'
+            imagem.src = 'imagens/JF.jpg'
         }
         resposta.innerHTML = `Encontramos uma pessoas de ${idade} anos de idade do sexo ${genero}`
     } else if (idade < 40) {
         if (sexo[0].checked) {
             genero = 'masculino'
+            imagem.src = 'imagens/AM.jpg'
         } else if (sexo[1].checked) {
             genero = 'feminino'
+            imagem.src = 'imagens/AF.jpg'
         }
         resposta.innerHTML = `Encontramos uma pessoas de ${idade} anos de idade do sexo ${genero}`
     } else {
         if (sexo[0].checked) {
             genero = 'masculino'
+            imagem.src = 'imagens/IM.jpg'
         } else if (sexo[1].checked) {
             genero = 'feminino'
+            imagem.src = 'imagens/IF.jpg'
         }
         resposta.innerHTML = `Encontramos uma pessoas de ${idade} anos de idade do sexo ${genero}`
     }
