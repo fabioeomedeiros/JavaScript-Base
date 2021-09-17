@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'orbitron';
-    src: url('Orbitron-VariableFont_wght.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Orbitron&family=Philosopher:ital@1&family=Titillium+Web&display=swap');
 
-@font-face {
-    font-family: 'titillium';
-    src: url('TitilliumWeb-Regular.ttf');
-}
+/*
+font-family: 'Actor', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+*/
 
 * {
     margin: 0px;
@@ -16,57 +15,77 @@
 }
 
 :root {
-    --cor0: #ffffff;
-    --cor1: #000000;
+    --cor0: #f7f7f7;
+    --cor1: #070707;
 }
 
 html {
-    color: rgba(102, 255, 115, 0.5);
-    font-family: 'titillium', Arial, Helvetica, sans-serif;
+    color: #55ff55;
+    font-family: 'Actor', sans-serif;
     font-weight: bold;
 }
 
 body {
-    /* background-image: linear-gradient(90deg, rgba(38, 163, 48, .7), #000000, rgba(38, 163, 48, 1) ); */
-    background-image: url('Matrix-wallpaper-2000px.jpg');
+    background-image: url('Universo.jpg');
 }
 
-div#container {
-    background-color: rgba(0, 0, 0, 0.95);
-    width: 700px;
-    margin: 100px auto;
-    padding:50px;
+main {
+    background-color: rgba(15,15,15,0.95);
+    max-width: 600px;
+    margin: 70px auto;
+    padding: 30px;
     border-radius: 25px;
-    box-shadow: 0px 0px 10px rgba(38, 163, 48, 0.7);
+    box-shadow: 0px 0px 1px #55FF55;
+}
+
+header h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
 }
 
 fieldset {
+    padding: 5px;
     border-radius: 5px;
-    padding: 15px;
-    margin: 10px 0px;
-    border: 1px solid rgba(38, 163, 48, 0.5);
+    border: 1px solid #55ff55
 }
 
 fieldset input {
-    color: rgb(180, 255, 187);;
-    background-color: #000000;
-    margin: 5px 0px 5px 10px;
-    padding: 3px;
+    margin: 3px 10px;
+    background-color: rgba(15,15,15,0);
+    color: #55FF55;
+}
+
+div#display {
+    border: 1px solid #55ff55;
+    padding: 5px;
     border-radius: 3px;
 }
 
-h1 {
-    /* color: rgba(38, 163, 48, 0.7); */
-    background-color: rgba(0,0,0,1);
-    font-family: 'orbitron', Arial, Helvetica, sans-serif;
+option, select {
+    color: #55FF55;
+    background-color: #070707; 
+}
+
+footer {
     text-align: center;
-    padding: 5px;
-    margin: 0px 0px 35px 0px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(38, 163, 48, 0.7);
+    margin-top: 50px;
 }
 
 .botao {
     padding: 3px 7px;
     border-radius: 3px;
+    margin: 10px 0px;
+    background-color: #070707;
+    color: #55ff55;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.autor {
+    font-family: 'Philosopher', sans-serif;
+}
+
+.credito {
+    font-size: 0.7em;
 }

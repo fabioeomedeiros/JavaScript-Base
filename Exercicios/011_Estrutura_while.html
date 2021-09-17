@@ -27,7 +27,7 @@
                                     <label for='id-i'>Início:</label>
                                 </td>
                                 <td>
-                                    <input id='id-i' name='nm-i' type='number'>
+                                    <input id='id-i' name='nm-i' type='number' value='0'>
                                 </td>
                             </tr>
                             <tr>
@@ -35,7 +35,7 @@
                                     <label for='id-f'>Fim:</label>
                                 </td>
                                 <td>
-                                    <input id='id-f' name='nm-f' type='number'>
+                                    <input id='id-f' name='nm-f' type='number' value='0'>
                                 </td>
                             </tr>
                             <tr>
@@ -43,7 +43,7 @@
                                     <label for='id-p'>Passo:</label>
                                 </td>
                                 <td>
-                                    <input id='id-p' name='nm-p' type='number'>
+                                    <input id='id-p' name='nm-p' type='number' min='1' value='1'>
                                 </td>
                             </tr>
                         </table>
@@ -51,9 +51,7 @@
                     <input class='botao' type='button' value=Enviar onclick='Contar()'>
                 </form>
             </div>
-            <div id='display'>
-
-            </div>
+            <div id='display'></div>
         </section>
         <footer>
             <p><span class='autor'>by Fabio Medeiros</span></p>

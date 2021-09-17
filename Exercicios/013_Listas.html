@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Tabuada</title>
+</head>
+<body>
+<main>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Tabuada</legend>
+                    <label for='id-n'>Número:</label>
+                    <input id='id-n' name='nm-n' type='number' value='0'>
+                </fieldset>
+                <input class='botao' type='button' value=Enviar onclick='gerarTabuada()'>
+            </form>
+        </div>
+        <div id='display'>
+            <select id='id-tab' name='nm-tab'></select>
+        </div>
+    </section>
+    <footer>
+        <p><span class='autor'>by Fabio Medeiros</span></p>
+        <p>
+            <span class='credito'> exercício propoasto por Gustavo Guanabara &copy; Curso em Vídeo</span>
+        </p>
+    </footer>
+</main>
+</body>
+</html>
