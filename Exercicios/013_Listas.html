@@ -8,27 +8,29 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script type="text/javascript" src="script.js"></script>
 
-    <title>Tabuada</title>
+    <title>Listas</title>
 </head>
 <body>
 <main>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Listas</h1>
     </header>
     <section>
         <div>
             <form>
                 <fieldset>
-                    <legend>Tabuada</legend>
-                    <label for='id-n'>Número:</label>
-                    <input id='id-n' name='nm-n' type='number' value='0'>
+                    <legend>Adicionar</legend>
+                    <label for='id-n'>Números:</label>
+                    <input id='id-n' name='nm-n' type='number' placeholder='de 1 à 100'>
+                    <input class='botao' type='button' value='Adicionar' onclick='Adicionar()'>
+                    <br>
+                    <select id='id-sel' name='nm-sel'></select>
+                    <input class='botao' type='button' value='Finalizar'>
                 </fieldset>
-                <input class='botao' type='button' value=Enviar onclick='gerarTabuada()'>
+                
             </form>
         </div>
-        <div id='display'>
-            <select id='id-tab' name='nm-tab'></select>
-        </div>
+        <div id='display'></div>
     </section>
     <footer>
         <p><span class='autor'>by Fabio Medeiros</span></p>
