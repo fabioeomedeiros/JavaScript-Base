@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Pessoas</title>
+</head>
+<body>
+    
+    <main id='principal'>
+        <header id='cabecalho'>
+            <h1>Pessoas</h1>
+        </header>
+        <section id='secao'>
+            <div>
+                <label for='id-nasc'>Ano de Nascimento:</label>
+                <input id='id-nasc' name='nm-nasc' type='number' min='1870' placeholder='4 díditos'>
+                <br>
+                Sexo:
+                <input id='id-masc' name='sexo' type='radio' value='masculino' checked>
+                <label for='id-masc'>Masculino</label>
+                <input id='id-femi' name='sexo' type='radio' value='feminino'>
+                <label for='id-femi'>Feminino</label>
+                <input id='id-env' name='nm-env' type='button' value='Encontrar' onclick='encontrar()'>
+            </div>
+            <div id='resposta'>
+                Aqui vai a resposta 
+                <br>
+                <img src='imagens/BM.jpg' id='imagem'>
+            </div>
+        </section>
+        <footer id='rodape'>
+            <p> by Fabio Medeiros  &copy; Curso em Vídeo</p>
+        </footer>
+    </main>
+
+</body>
+</html>

@@ -31,30 +31,45 @@ body {
 }
 
 main#principal {
-    background-color: rgb(75, 34, 0);
-    max-width: 600px;
+    max-width: 650px;
     margin: 30px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
-    
+    text-align: center;
 }
 
 header#cabecalho {
     /* background-color: blue; */
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 15px 0px;
     padding: 10px 0px;
 }
 
 header#cabecalho h1 {
     /* background-color: green; */
+    font-size: 2.5em;
     text-align: center;
     text-shadow: 3px 3px 3px rgba(0,0,0,0.7);
 }
 
 section#secao {
-    /* background-color: yellow; */
+    background-color: rgb(126, 57, 0);
+    color: #f7f7f7;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto 30px auto;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
     font-family: 'Actor', sans-serif;
+}
+
+div#msg {
+    margin: 10px 0px 25px 0px;
+    font-size: 2em;
+}
+
+p#creditos {
+    font-size: 0.7em;
+    margin: 10px 0px 15px 0px;
+    color: var(--cor1);
 }
 
 /* footer#rodape {
